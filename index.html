@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="banner">
+            <img src="cover.jpg" alt="" class="cover">
+        </div>
+        <div class="navLink">
+            <ul>
+                <li><a href="#" data-text="Home">Home</a></li>
+                <li><a href="about.html" data-text="About">About</a></li>
+                <li><a href="#" data-text="Services">Services</a></li>
+                <li><a href="#" data-text="Portfolio">Portfolio</a></li>
+                <li><a href="#" data-text="Contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="sec">
+        <header>
+            <div class="toggle"></div>
+            <a href="#" class="btn">Hire Me</a>
+        </header>
+
+        <div class="imgBx">
+            <img src="profile.jpg" alt="profile" class="cover">
+        </div>
+        <div class="content">
+            <h1>Hi, I am a<br><span>Senior Comrade!!!</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aut reiciendis repellendus ipsa expedita. Aliquid ducimus mollitia enim, libero repellat nesciunt doloribus ex, quisquam provident harum doloremque praesentium nam aperiam!</p>
+            <a href="#" class="btn">Download My CV</a>
+        </div>
+
+        <footer>
+            <ul class="sci">
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">twitter</a></li>
+                <li><a href="#">instagram</a></li>
+            </ul>
+            <p class="copyRightText">2023 Verified Comrade</p>
+        </footer>
+    </section>
+
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec');
+        menuToggle.onclick = function() {
+           menuToggle.classList.toggle('active');
+           navigation.classList.toggle('active');
+           sec.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
